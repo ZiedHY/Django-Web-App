@@ -1,0 +1,6 @@
+<h1>Bienvenue {% if sexe == "Femme" %} Madame {% else %} Monsieur
+    {% endif %} {{ pseudo|default:"visiteur" }} sur mon blog !</h1>
+        <p>Les crêpes bretonnes ça tue des mouettes en plein vol !</p>
+
+{% load static %}
+<img src="{% static 'blog/crepes.jpg' %}" alt="Mon image" />
